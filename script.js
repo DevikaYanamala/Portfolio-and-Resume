@@ -3,35 +3,37 @@ document.addEventListener("DOMContentLoaded", () => {
     const cursorDot = document.querySelector('.cursor-dot');
     const cursorOutline = document.querySelector('.cursor-outline');
     
-    window.addEventListener('mousemove', (e) => {
-        const posX = e.clientX;
-        const posY = e.clientY;
-        
-        // Dot follows instantly
-        cursorDot.style.left = `${posX}px`;
-        cursorDot.style.top = `${posY}px`;
-        
-        // Outline follows with slight delay using WAAPI
-        cursorOutline.animate({
-            left: `${posX}px`,
-            top: `${posY}px`
-        }, { duration: 500, fill: "forwards" });
-    });
+    if (cursorDot && cursorOutline) {
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+            
+            // Dot follows instantly
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+            
+            // Outline follows with slight delay using WAAPI
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: "forwards" });
+        });
 
-    // Enlarge cursor on interactive elements
-    const interactables = document.querySelectorAll('a, button, .magnetic');
-    interactables.forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-            cursorOutline.style.backgroundColor = 'rgba(255,255,255,0.1)';
-            cursorOutline.style.borderColor = 'transparent';
+        // Enlarge cursor on interactive elements
+        const interactables = document.querySelectorAll('a, button, .magnetic');
+        interactables.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                cursorOutline.style.backgroundColor = 'rgba(255,255,255,0.1)';
+                cursorOutline.style.borderColor = 'transparent';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
+                cursorOutline.style.backgroundColor = 'transparent';
+                cursorOutline.style.borderColor = 'rgba(255, 255, 255, 0.4)';
+            });
         });
-        el.addEventListener('mouseleave', () => {
-            cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
-            cursorOutline.style.backgroundColor = 'transparent';
-            cursorOutline.style.borderColor = 'rgba(255, 255, 255, 0.4)';
-        });
-    });
+    }
 
     // 2. Magnetic Buttons Effect
     const magneticElements = document.querySelectorAll('.magnetic');
