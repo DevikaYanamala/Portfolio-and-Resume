@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devika Yanamala | Data Analyst</title>
+    <title>Devika Yanamala | Data Analyst Portfolio</title>
+    <meta name="description" content="Portfolio of Devika Yanamala - Data Analyst specializing in SQL, Python, Power BI, DAX, Data Modelling, and Business Intelligence.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -20,88 +21,193 @@
         <div class="blob blob-3"></div>
     </div>
 
-    <!-- Premium Glassmorphism Navbar -->
+    <!-- Glassmorphism Navbar -->
     <nav class="navbar glass">
         <a href="#" class="logo">Devika<span>.</span></a>
         <div class="nav-links">
+            <a href="#summary" class="nav-link magnetic">Overview</a>
             <a href="#expertise" class="nav-link magnetic">Skills</a>
             <a href="#experience" class="nav-link magnetic">Experience</a>
             <a href="#projects" class="nav-link magnetic">Projects</a>
+            <a href="#hackathons" class="nav-link magnetic">Hackathons</a>
             <a href="#education" class="nav-link magnetic">Education</a>
         </div>
-        <div style="display: flex; gap: 10px;">
-            <a href="Devika_Yanamala_Resume_Data_Analyst.pdf" target="_blank" class="nav-btn magnetic">Analyst Resume</a>
-            <a href="Devika_Yanamala_Resume_Data_Scientist.pdf" target="_blank" class="nav-btn magnetic">Scientist Resume</a>
+        <div style="display: flex; gap: 10px; align-items: center;">
+            <a href="Devika_Yanamala_CV_DataAnalyst.pdf" target="_blank" class="nav-btn magnetic"><i class="fa-solid fa-file-arrow-down"></i> Data Analyst CV</a>
         </div>
     </nav>
 
     <!-- Superb Hero Section -->
-    <header class="hero">
+    <header class="hero" id="summary">
         <div class="hero-content reveal-up">
             <div class="availability-pill">
-                <span class="pulse"></span> Actively seeking UK roles
+                <span class="pulse"></span> UK Graduate Visa — Full Right to Work (No Sponsorship Needed)
             </div>
-            <p class="greeting" style="font-size: 1.5rem; font-weight: 600; color: var(--text-dim); margin-bottom: 0.5rem;">Hello! 👋 I am</p>
+            <p class="greeting">Hello! 👋 I am</p>
             <h1 class="title-main">Devika Yanamala</h1>
-            <h2 class="title-role gradient-text">Data Analyst & Scientist</h2>
+            <h2 class="title-role gradient-text">Data Analyst & Business Intelligence Specialist</h2>
             
-            <div class="quote-box" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-2); padding-left: 1.2rem;">
-                <p style="font-size: 1.3rem; font-style: italic; color: #fff;">"I don't just build models. I find the commercial story hiding inside the data."</p>
+            <div class="quote-box">
+                <p>"Data Analyst with 3+ years of experience turning complex business data into clear, actionable insights through SQL, Python, and Power BI dashboards."</p>
             </div>
 
-            <p class="subtitle">Results-driven Data Professional with 2+ years of experience and an MSc in Data Science. Proven ability to build predictive machine learning models and translate complex datasets into actionable business strategies.</p>
+            <p class="subtitle">
+                Experienced across the full analytics lifecycle — from raw data extraction and reconciliation to building executive Power BI dashboards, root-cause analysis, and delivering data storytelling for technical and non-technical stakeholders. Currently completing MSc in Data Science & AI at Newcastle University.
+            </p>
+
+            <div class="contact-strip">
+                <span><i class="fa-solid fa-location-dot"></i> Barking, UK (Open to Relocation)</span>
+                <span><i class="fa-solid fa-envelope"></i> devikayanamala55@gmail.com</span>
+                <span><i class="fa-solid fa-phone"></i> +44 7352 683914</span>
+            </div>
+
             <div class="hero-cta">
-                <a href="#projects" class="btn-primary magnetic">View Featured Project <i class="fa-solid fa-arrow-down"></i></a>
+                <a href="#projects" class="btn-primary magnetic">Explore Analyst Projects <i class="fa-solid fa-arrow-down"></i></a>
+                <a href="https://github.com/DevikaYanamala" target="_blank" class="btn-secondary magnetic"><i class="fa-brands fa-github"></i> GitHub Profile</a>
+                <a href="https://www.linkedin.com/in/devika-yanamala-325250345/" target="_blank" class="btn-secondary magnetic"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
             </div>
         </div>
-        
+
         <div class="hero-image reveal-up delay-1">
             <div class="image-wrapper">
                 <div class="image-glow"></div>
                 <img src="assets/profile.jpg" alt="Devika Yanamala" onerror="this.src='https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=800'">
                 <!-- Floating Tech Badges -->
-                <div class="tech-float float-1"><i class="fa-brands fa-python"></i></div>
-                <div class="tech-float float-2"><i class="fa-solid fa-database"></i></div>
-                <div class="tech-float float-3"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="tech-float float-1" title="Python"><i class="fa-brands fa-python"></i></div>
+                <div class="tech-float float-2" title="SQL & Databases"><i class="fa-solid fa-database"></i></div>
+                <div class="tech-float float-3" title="Power BI & Analytics"><i class="fa-solid fa-chart-pie"></i></div>
             </div>
         </div>
     </header>
 
-    <!-- Skills Section (from Resume) -->
-    <section id="expertise" class="section">
-        <div class="section-header reveal-up">
-            <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
-        </div>
-        <div class="bento-grid">
-            <div class="bento-card reveal-up">
-                <div class="icon-wrapper"><i class="fa-solid fa-chart-pie card-icon"></i></div>
-                <h3>Statistics & Analytics</h3>
-                <p>Statistical Analysis, Hypothesis Testing, A/B Testing, Pandas, NumPy, Jupyter, EDA.</p>
+    <!-- Key Metrics Highlight Ribbon -->
+    <section class="section metrics-section">
+        <div class="metrics-grid">
+            <div class="metric-card glass-card reveal-up">
+                <div class="metric-number gradient-text">3+</div>
+                <div class="metric-label">Years Data & Analytics Experience</div>
             </div>
-            <div class="bento-card reveal-up delay-1">
-                <div class="icon-wrapper"><i class="fa-solid fa-chart-column card-icon"></i></div>
-                <h3>Visualization & BI</h3>
-                <p>Power BI, DAX, Tableau, Matplotlib, Seaborn, Interactive Dashboards, Commercial Storytelling.</p>
+            <div class="metric-card glass-card reveal-up delay-1">
+                <div class="metric-number gradient-text">£150K+</div>
+                <div class="metric-label">Profit Recovery Identified (Retail)</div>
             </div>
-            <div class="bento-card reveal-up delay-2">
-                <div class="icon-wrapper"><i class="fa-solid fa-brain card-icon"></i></div>
-                <h3>Machine Learning & XAI</h3>
-                <p>XGBoost, Scikit-Learn, Predictive Modeling, SMOTE (Imbalance Handling), SHAP (Explainable AI), Tuning.</p>
+            <div class="metric-card glass-card reveal-up delay-2">
+                <div class="metric-number gradient-text">$1.3B+</div>
+                <div class="metric-label">Attributed Revenue Modelled</div>
             </div>
-            <div class="bento-card reveal-up delay-3">
-                <div class="icon-wrapper"><i class="fa-brands fa-aws card-icon"></i></div>
-                <h3>Data Engineering & Cloud</h3>
-                <p>Python, SQL, Snowflake, Scikit-Learn Pipelines, AWS, Git Version Control, Data Wrangling.</p>
+            <div class="metric-card glass-card reveal-up delay-3">
+                <div class="metric-number gradient-text">100k+</div>
+                <div class="metric-label">Structured Records Analyzed</div>
             </div>
         </div>
     </section>
 
-    <!-- Modern Timeline Experience -->
+    <!-- Technical Skills Section -->
+    <section id="expertise" class="section">
+        <div class="section-header reveal-up">
+            <h2 class="section-title">Technical <span class="gradient-text">Expertise</span></h2>
+            <p class="section-subtitle">Core competencies across Data Analysis, Business Intelligence, Data Quality, and Modeling</p>
+        </div>
+
+        <div class="bento-grid">
+            <!-- SQL & BI -->
+            <div class="bento-card reveal-up">
+                <div class="icon-wrapper"><i class="fa-solid fa-database card-icon"></i></div>
+                <h3>SQL, Reporting & BI</h3>
+                <div class="skill-tags">
+                    <span class="tag">SQL (Spark, Snowflake, Postgres, MySQL)</span>
+                    <span class="tag">Power BI (DAX, Data Modelling, Power Query)</span>
+                    <span class="tag">Tableau</span>
+                    <span class="tag">Advanced Excel (Pivot, Formulas)</span>
+                    <span class="tag">Star-Schema Design</span>
+                </div>
+            </div>
+
+            <!-- Data Quality & Analysis -->
+            <div class="bento-card reveal-up delay-1">
+                <div class="icon-wrapper"><i class="fa-solid fa-chart-column card-icon"></i></div>
+                <h3>Data Analysis & Quality</h3>
+                <div class="skill-tags">
+                    <span class="tag">Data Wrangling & Cleaning</span>
+                    <span class="tag">Data Reconciliation & QA</span>
+                    <span class="tag">Exploratory Data Analysis (EDA)</span>
+                    <span class="tag">Root Cause & Trend Analysis</span>
+                    <span class="tag">Customer & Retail Segmentation</span>
+                    <span class="tag">A/B Testing & Forecasting</span>
+                </div>
+            </div>
+
+            <!-- Python & Modeling -->
+            <div class="bento-card reveal-up delay-2">
+                <div class="icon-wrapper"><i class="fa-brands fa-python card-icon"></i></div>
+                <h3>Python & Data Pipelines</h3>
+                <div class="skill-tags">
+                    <span class="tag">Python (Pandas, NumPy)</span>
+                    <span class="tag">Dimensional Data Modelling</span>
+                    <span class="tag">ETL / ELT Pipeline Design</span>
+                    <span class="tag">Data Warehousing Concepts</span>
+                    <span class="tag">Scikit-Learn & Predictive Analytics</span>
+                </div>
+            </div>
+
+            <!-- Business Insight & Stakeholders -->
+            <div class="bento-card reveal-up delay-3">
+                <div class="icon-wrapper"><i class="fa-solid fa-lightbulb card-icon"></i></div>
+                <h3>Business Insight & Storytelling</h3>
+                <div class="skill-tags">
+                    <span class="tag">Business Requirements Gathering</span>
+                    <span class="tag">Stakeholder Collaboration</span>
+                    <span class="tag">Ad Hoc Analytics Requests</span>
+                    <span class="tag">Process Mapping & Documentation</span>
+                    <span class="tag">Executive Data Storytelling</span>
+                </div>
+            </div>
+
+            <!-- Additional Tech & AI Exposure -->
+            <div class="bento-card full-width reveal-up">
+                <div class="icon-wrapper"><i class="fa-solid fa-microchip card-icon"></i></div>
+                <h3>Additional Technical & AI Exposure</h3>
+                <div class="skill-tags">
+                    <span class="tag">Machine Learning (Classification, Regression, Clustering)</span>
+                    <span class="tag">XGBoost & SHAP Explainability</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">AWS & BigQuery</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Git & GitHub</span>
+                    <span class="tag">Generative AI, RAG & LLMs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Timeline -->
     <section id="experience" class="section">
         <div class="section-header reveal-up">
             <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+            <p class="section-subtitle">Track record of delivering analytics, dashboards, and data-driven insights</p>
         </div>
+
         <div class="timeline">
+            <!-- Gut Instinct / Newcastle Industry Partner -->
+            <div class="timeline-item reveal-up">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content glass-card glowing-border">
+                    <div class="timeline-header">
+                        <div>
+                            <h3>Data/AI Consultant Intern</h3>
+                            <h4>Newcastle University Industry Partner (Gut Instinct, UK)</h4>
+                        </div>
+                        <span class="timeline-date">Jun 2026 — Jul 2026</span>
+                    </div>
+                    <ul>
+                        <li>Elicited, documented, and validated business requirements through stakeholder discussions, translating them into structured functional specifications and process maps within a startup environment.</li>
+                        <li>Researched industry trends and evaluated a range of AI tools and platforms against stakeholder requirements, recommending scalable solutions tailored to different business functions.</li>
+                        <li>Built business cases and strategic recommendations for AI adoption, targeting operational efficiency, business growth, and process improvement.</li>
+                        <li>Presented findings and implementation strategies to business and technical stakeholders, translating complex analysis into clear, actionable recommendations.</li>
+                    </ul>
+                </div>
+            </div>
+
             <!-- Rooted Platform -->
             <div class="timeline-item reveal-up">
                 <div class="timeline-marker"></div>
@@ -109,97 +215,103 @@
                     <div class="timeline-header">
                         <div>
                             <h3>Data Analyst – Product Analytics</h3>
-                            <h4>Rooted Platform (Self Employed)</h4>
+                            <h4>Rooted Platform (Independent Project, Remote)</h4>
                         </div>
-                        <span class="timeline-date">04/2026 — Present</span>
+                        <span class="timeline-date">Apr 2026 — Present</span>
                     </div>
                     <ul>
-                        <li>Developed an MVP website to enable discovery of culturally authentic food products using location-based filtering and user preferences.</li>
-                        <li>Designed core features including product search, authenticity-based ratings, and location-based store recommendations.</li>
-                        <li>Analysing simulated user behaviour data (search queries, pricing, and location filters) to identify patterns influencing user decisions.</li>
-                        <li>Performing exploratory data analysis using Python and SQL to evaluate cuisine popularity, price sensitivity, and store proximity trends.</li>
-                        <li>Developing data-driven improvements such as personalised search and enhanced product recommendations.</li>
+                        <li>Engineered a data analytics MVP in Python and SQL to ingest and analyse user behaviour, traffic patterns, and authentication data, enabling data-driven product decisions.</li>
+                        <li>Designed and automated interactive, self-service Power BI and Streamlit dashboards with advanced DAX measures, improving reporting efficiency and decision-making speed.</li>
+                        <li>Applied EDA and customer segmentation to optimise pricing strategy and surface opportunities for product and search improvements.</li>
                     </ul>
                 </div>
             </div>
-            <!-- Newcastle -->
+
+            <!-- Newcastle Library Data Analyst -->
             <div class="timeline-item reveal-up">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content glass-card glowing-border">
                     <div class="timeline-header">
                         <div>
-                            <h3>Data Analyst</h3>
-                            <h4>Newcastle University, UK (Studentship)</h4>
+                            <h3>Data Analyst Intern</h3>
+                            <h4>Newcastle University - Internship, Newcastle upon Tyne, UK</h4>
                         </div>
-                        <span class="timeline-date">01/2026 — Present</span>
+                        <span class="timeline-date">Dec 2025 — July 2026</span>
                     </div>
                     <ul>
-                        <li>Conducted advanced data analysis using SQL and Python to identify usage patterns across smartcard and occupancy datasets, directly supporting strategic resource allocation decisions.</li>
-                        <li>Designed and deployed interactive Power BI dashboards, translating complex backend datasets into clear, operational insights for non-technical stakeholders.</li>
-                        <li>Collaborated cross-functionally with library management teams to establish structured data governance practices, improving overall data accessibility.</li>
+                        <li>Built Python ETL pipelines to automate the collection, cleaning, validation and transformation of library occupancy and resource usage data, creating a reliable dataset for downstream analysis and reporting.</li>
+                        <li>Designed and implemented a real-time KPI performance framework in Power BI to monitor department occupancy and resource utilization by zone, giving stakeholders clear visibility into space and digital resource allocation.</li>
+                        <li>Conducted in-depth resource usage analysis across physical and digital services, interrogating large-scale usage datasets using SQL and Python to identify spatial usage trends and resource consumption patterns.</li>
+                        <li>Supported strategic capacity planning, resource allocation, and future space extension decision-making through executive Power BI dashboards and data storytelling.</li>
                     </ul>
                 </div>
             </div>
-            <!-- BEPEC -->
+
+            <!-- BEPEC Associate Data Scientist -->
             <div class="timeline-item reveal-up">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content glass-card glowing-border">
                     <div class="timeline-header">
                         <div>
                             <h3>Associate Data Scientist</h3>
-                            <h4>BEPEC Solutions, Bangalore, India</h4>
+                            <h4>BEPEC Solutions (Full-Time, Bangalore, India)</h4>
                         </div>
-                        <span class="timeline-date">05/2023 — 05/2025</span>
+                        <span class="timeline-date">May 2023 — May 2025</span>
                     </div>
                     <ul>
-                        <li>Automated manual reporting pipelines and built dynamic business intelligence dashboards, improving overall reporting efficiency by 30% and saving 10+ hours per week.</li>
-                        <li>Led end-to-end data projects, partnering directly with stakeholders to align analytics deliverables with core business requirements.</li>
-                        <li>Developed scalable predictive models and automated workflows using Python and AWS, significantly enhancing data processing efficiency and decision reliability.</li>
+                        <li>Developed and deployed machine learning models (classification and regression) that improved operational efficiency by 30%, delivering measurable business impact.</li>
+                        <li>Performed feature engineering, data preprocessing, and model evaluation to enhance predictive performance and ensure robust, reliable outcomes.</li>
+                        <li>Analysed 100k+ structured records using SQL and Python to identify patterns, trends, and optimisation opportunities, supporting data-driven business decisions.</li>
+                        <li>Translated cross-functional business requirements into analytical solutions, dashboards and reports, giving stakeholders clearer evidence to support operational decision-making.</li>
                     </ul>
                 </div>
             </div>
+
             <!-- BEPEC Intern -->
             <div class="timeline-item reveal-up">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content glass-card glowing-border">
                     <div class="timeline-header">
                         <div>
-                            <h3>Data Science Intern</h3>
-                            <h4>BEPEC Solutions, Bangalore, India</h4>
+                            <h3>Data Scientist Intern</h3>
+                            <h4>BEPEC Solutions (Internship, Bangalore, India)</h4>
                         </div>
-                        <span class="timeline-date">01/2023 — 05/2023</span>
+                        <span class="timeline-date">Jan 2023 — May 2023</span>
                     </div>
                     <ul>
-                        <li>Performed exploratory data analysis (EDA) to uncover market trends, directly supporting data-driven business decisions.</li>
-                        <li>Created compelling visual reports and dashboards to present complex findings to senior management.</li>
-                        <li>Assisted in the validation of predictive models, contributing to a 15% improvement in forecasting accuracy.</li>
+                        <li>Conducted exploratory data analysis and preprocessing (imputation, encoding, scaling), improving forecasting accuracy by 15% by resolving data quality issues upstream.</li>
+                        <li>Created dynamic Power BI and Excel dashboards to track historical performance metrics, supporting resource planning and department scheduling.</li>
+                        <li>Designed and implemented end-to-end data workflows from ingestion through model deployment and reporting.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Project -->
+    <!-- Selected Projects Section -->
     <section id="projects" class="section">
         <div class="section-header reveal-up">
-            <h2 class="section-title">Key <span class="gradient-text">Project</span></h2>
+            <h2 class="section-title">Selected <span class="gradient-text">Projects</span></h2>
+            <p class="section-subtitle">Commercial & analytics initiatives solving real-world business problems</p>
         </div>
+
         <div class="projects-container">
+            <!-- Project 1: Retail Analytics -->
             <div class="project-showcase glass-card reveal-up premium-card">
                 <div class="project-hero-image">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200" alt="DMart Dashboard">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200" alt="Retail Analytics Dashboard">
                     <div class="project-overlay"></div>
                 </div>
                 <div class="project-content large-padding">
                     <div class="tech-stack center">
-                        <span>Power BI</span><span>DAX</span><span>Python</span>
+                        <span>Power BI</span><span>DAX</span><span>Python</span><span>Pandas</span><span>Star Schema</span>
                     </div>
                     <h3 class="text-center">Commercial Opportunities Analytics Dashboard (Retail)</h3>
                     <div class="project-bullets">
                         <ul>
-                            <li>Partnered with Sales Leadership to identify high-margin growth opportunities across 15 European markets by analyzing 4 years of transactional data (8,000+ records).</li>
-                            <li>Engineered a robust Star Schema data model using Python (Pandas) to clean raw data and prepare optimized Fact and Dimension tables for BI ingestion.</li>
-                            <li>Developed an executive Power BI dashboard with 20+ advanced DAX measures, proving that capping customer discounts at 15% and expanding the Corporate segment could recover over £150K in annual profit.</li>
+                            <li>Built a star-schema data model in Python (Pandas) to clean, transform, and unify raw transactional sales data across 15 European markets into a single analytical model.</li>
+                            <li>Developed a Power BI dashboard with 20+ advanced DAX measures (time intelligence, segment grouping) to track key retail metrics.</li>
+                            <li>Analysed pricing and customer segments to identify discount optimisation opportunities, projected to recover £150K+ in annual profit.</li>
                         </ul>
                     </div>
                     <div class="center-btn">
@@ -208,22 +320,22 @@
                 </div>
             </div>
 
-            <!-- Project 2 (Pharma Analytics) -->
+            <!-- Project 2: Pharma Marketing Strategy -->
             <div class="project-showcase glass-card reveal-up premium-card" style="margin-top: 4rem;">
                 <div class="project-hero-image">
-                    <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=1200" alt="Pharma Data Analytics">
+                    <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=1200" alt="Pharma Analytics">
                     <div class="project-overlay"></div>
                 </div>
                 <div class="project-content large-padding">
                     <div class="tech-stack center">
-                        <span>Power BI</span><span>Python</span><span>Inference</span><span>DAX</span>
+                        <span>Power BI</span><span>Python</span><span>ITS Analysis</span><span>Attribution Model</span><span>DAX What-If</span>
                     </div>
                     <h3 class="text-center">Pharmaceutical Marketing Strategy & Attribution Analysis</h3>
                     <div class="project-bullets">
                         <ul>
-                            <li>Conducted an <strong>Interrupted Time Series (ITS)</strong> analysis to quantify the ROI of three marketing strategies for NZT-48, identifying Strategy 2 as the primary driver with $1.3B+ in attributed revenue.</li>
-                            <li>Modeled the commercial impact of a 2015 competitor entry, proving market resilience while identifying critical growth deceleration points for strategic budget reallocation.</li>
-                            <li>Engineered a regression-based attribution model in <strong>Python</strong> to estimate the dollar-value of sales per marketing activity, translating findings into an interactive <strong>Power BI Strategy Simulator</strong>.</li>
+                            <li>Built a regression-based marketing attribution model in Python to estimate the commercial impact and ROI of three campaign strategies.</li>
+                            <li>Applied Interrupted Time Series (ITS) analysis and statistical testing to evaluate competitor market entry and predict sales deceleration.</li>
+                            <li>Designed an interactive Power BI strategy simulator with DAX what-if parameters, identifying high-impact channels and modelling $1.3B+ in attributed revenue.</li>
                         </ul>
                     </div>
                     <div class="center-btn">
@@ -232,22 +344,22 @@
                 </div>
             </div>
 
-            <!-- Project 3 (Data Science) -->
+            <!-- Project 3: Banking Churn & Next Best Action -->
             <div class="project-showcase glass-card reveal-up premium-card" style="margin-top: 4rem;">
                 <div class="project-hero-image">
-                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=1200" alt="Banking Data Analytics">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=1200" alt="Banking Analytics">
                     <div class="project-overlay"></div>
                 </div>
                 <div class="project-content large-padding">
                     <div class="tech-stack center">
-                        <span>Python</span><span>XGBoost</span><span>SHAP</span><span>Scikit-Learn</span>
+                        <span>Python</span><span>Scikit-Learn</span><span>XGBoost</span><span>SMOTE</span><span>SHAP Explainability</span>
                     </div>
                     <h3 class="text-center">Next Best Action & Churn Prediction Model (Banking)</h3>
                     <div class="project-bullets">
                         <ul>
-                            <li>Developed an end-to-end <strong>XGBoost classification pipeline</strong> to predict customer churn using real banking data, handling extreme class imbalance with SMOTE inside an imblearn pipeline.</li>
-                            <li>Engineered a dynamic <strong>Next Best Action (NBA) recommendation engine</strong> that maps high-risk customer personas to optimized retention products, driving commercial uplift.</li>
-                            <li>Implemented <strong>SHAP (SHapley Additive exPlanations)</strong> to ensure strict model transparency and explainability, aligning with UK banking regulatory standards.</li>
+                            <li>Developed an end-to-end machine learning pipeline in Python (Scikit-Learn, Imbalanced-Learn) to predict customer churn, addressing class imbalance with SMOTE.</li>
+                            <li>Engineered a Next Best Action recommendation framework mapping customer transaction patterns to tailored retention products, reducing manual review effort.</li>
+                            <li>Applied SHAP to ensure model transparency and explainability, aligning with UK banking regulatory expectations.</li>
                         </ul>
                     </div>
                     <div class="center-btn">
@@ -258,34 +370,93 @@
         </div>
     </section>
 
-    <!-- Education & Certifications -->
-    <section id="education" class="section split-section">
-        <div class="half reveal-up">
-            <h2 class="section-title left-align">Education</h2>
-            <div class="glass-card glowing-border ed-card">
-                <h3>Master of Science (MSc), Data Science & Artificial Intelligence</h3>
-                <h4>Newcastle University, UK</h4>
-                <p class="date">Expected 09/2026</p>
-                <p class="modules"><strong>UK Modules:</strong> Data Visualisation, Machine Learning, Statistical Foundations of Data Science, Deep Learning, Image Processing, Data Science in the wild (Group Project), Generative AI for Businesses, Advanced AI.</p>
-            </div>
-            <div class="glass-card glowing-border ed-card mt-4">
-                <h3>Bachelor of Technology</h3>
-                <h4>IIIT, RGUKT - RK Valley, India</h4>
-                <p class="date">2019 – 2023</p>
-                <p class="modules"><strong>CGPA:</strong> 8.7/10</p>
-            </div>
+    <!-- Hackathons & Innovation Projects Section -->
+    <section id="hackathons" class="section">
+        <div class="section-header reveal-up">
+            <h2 class="section-title">Hackathons & <span class="gradient-text">Innovation</span></h2>
+            <p class="section-subtitle">Rapid prototyping, AI innovation, and competitive pitches</p>
         </div>
 
-        <div class="half reveal-up delay-1">
-            <h2 class="section-title left-align">Certifications & Achievements</h2>
-            <div class="glass-card glowing-border ed-card feature-gradient">
-                <h3>UK Work Culture Programme (Awarded Participant)</h3>
-                <h4>Newcastle University</h4>
-                <ul>
-                    <li>Awarded a highly competitive place in an intensive 2-day professional programme focused on UK industry standards and corporate communication.</li>
-                    <li>Collaborated within a cross-functional team to solve a live business challenge set by a UK employer, presenting actionable findings and project solutions directly to stakeholders.</li>
-                    <li>Networked with international alumni and industry professionals to align technical skills with the current demands of the UK job market.</li>
+        <div class="bento-grid">
+            <div class="bento-card reveal-up">
+                <div class="icon-wrapper"><i class="fa-solid fa-robot card-icon"></i></div>
+                <h3>AI-Powered Smart Spending Assistant</h3>
+                <p style="color: var(--accent-2); font-weight: 600; margin-bottom: 0.5rem;">Accenture × Newcastle University AI Hackathon | Jul 2026</p>
+                <ul style="color: var(--text-dim); padding-left: 1.2rem; line-height: 1.7; margin-top: 1rem;">
+                    <li>Collaborated in a multidisciplinary team to design and prompt-engineer an AI-powered Smart Spending Assistant that extracted and auto-categorised receipt data using AI.</li>
+                    <li>Analysed spending patterns to generate personalised financial insights and recommendations.</li>
+                    <li>Delivered a proof-of-concept within a limited timeframe, presenting the business value to industry & academic stakeholders.</li>
                 </ul>
+            </div>
+
+            <div class="bento-card reveal-up delay-1">
+                <div class="icon-wrapper"><i class="fa-solid fa-heart-pulse card-icon"></i></div>
+                <h3>ClearHead - AI Student Burnout Platform</h3>
+                <p style="color: var(--accent-2); font-weight: 600; margin-bottom: 0.5rem;">Founders Club AI Mini Hackathon | Jun 2026</p>
+                <ul style="color: var(--text-dim); padding-left: 1.2rem; line-height: 1.7; margin-top: 1rem;">
+                    <li>Designed and prototyped an AI-powered student wellbeing and burnout-prediction solution within a 60-minute hackathon sprint.</li>
+                    <li>Modelled burnout risk using sleep patterns, stress indicators, study habits, and lifestyle behaviours.</li>
+                    <li>Delivered a live pitch demonstrating product thinking and AI-assisted problem-solving to judges and peers.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education, Certifications & Leadership Section -->
+    <section id="education" class="section">
+        <div class="section-header reveal-up">
+            <h2 class="section-title">Education & <span class="gradient-text">Leadership</span></h2>
+        </div>
+
+        <div class="split-section">
+            <div class="half">
+                <h3 class="left-align" style="font-size: 2rem; margin-bottom: 2rem; color: #fff;">Academic Credentials</h3>
+                
+                <!-- MSc Education -->
+                <div class="ed-card glass-card glowing-border reveal-up">
+                    <h3>MSc in Data Science & Artificial Intelligence</h3>
+                    <h4>Newcastle University, Newcastle upon Tyne, UK</h4>
+                    <div class="date"><i class="fa-regular fa-calendar"></i> Expected Sep 2026</div>
+                    <div class="modules">
+                        <p><strong>Coursework:</strong> Data Visualisation, Machine Learning, Statistical Foundations of Data Science, Deep Learning, Image Processing, Generative AI for Business, Advanced AI, Group Project.</p>
+                        <p style="margin-top: 0.8rem;"><strong>Dissertation:</strong> <em>Towards the Modelling of Traffic Flows from Open-Source Data - An Assessment of Automated OSM Topological Verification for Machine Learning-Based AADT Prediction.</em> Built a Python pipeline (OSMnx, NetworkX) to resolve topological errors and engineer graph-theoretic centrality features for Random Forest & XGBoost models.</p>
+                    </div>
+                </div>
+
+                <!-- BTech Education -->
+                <div class="ed-card glass-card glowing-border reveal-up delay-1">
+                    <h3>Bachelor of Technology (B.Tech)</h3>
+                    <h4>IIIT, RGUKT, RK Valley, India</h4>
+                    <div class="date"><i class="fa-regular fa-calendar"></i> 2019 — 2023</div>
+                    <div class="modules">
+                        <p><strong>Academic Achievement:</strong> CGPA 8.7 / 10</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="half">
+                <h3 class="left-align" style="font-size: 2rem; margin-bottom: 2rem; color: #fff;">Leadership & Recognition</h3>
+
+                <!-- Certifications -->
+                <div class="ed-card glass-card feature-gradient reveal-up">
+                    <h3>UK Work Culture Programme</h3>
+                    <h4>Newcastle University Professional Development | 2026</h4>
+                    <p style="color: var(--text-dim); margin-top: 0.5rem; line-height: 1.6;">Selected for a competitive programme focused on UK industry standards, workplace culture, and corporate communication. Collaborated in a team to design and pitch an AI-assisted MVP to industry professionals.</p>
+                </div>
+
+                <!-- Global Ambassador -->
+                <div class="ed-card glass-card feature-gradient reveal-up delay-1 mt-4">
+                    <h3>Global Ambassador</h3>
+                    <h4>WomenTech Network | May 2023 — Present</h4>
+                    <p style="color: var(--text-dim); margin-top: 0.5rem; line-height: 1.6;">Contributed to global leadership initiatives promoting technical excellence, diversity, and women leadership in AI and Data Science.</p>
+                </div>
+
+                <!-- Volunteer Rep -->
+                <div class="ed-card glass-card feature-gradient reveal-up delay-2 mt-4">
+                    <h3>Volunteer Module Representative</h3>
+                    <h4>Newcastle University | May 2026</h4>
+                    <p style="color: var(--text-dim); margin-top: 0.5rem; line-height: 1.6;">Elected to represent the MSc student cohort; partnered directly with faculty to optimize curriculum delivery and student learning experiences.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -294,13 +465,19 @@
     <footer class="footer">
         <div class="footer-content reveal-up">
             <h2 class="gradient-text">Devika Yanamala</h2>
-            <p>Newcastle Upon Tyne, UK</p>
-            <div class="social-links">
-                <a href="mailto:devikayanamala55@gmail.com" class="magnetic"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/devika-yanamala-325250345/" target="_blank" class="magnetic"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/DevikaYanamala" target="_blank" class="magnetic"><i class="fa-brands fa-github"></i></a>
+            <p>Data Analyst | Barking, UK (Open to Relocation)</p>
+
+            <div class="contact-badge-box">
+                <span class="visa-badge"><i class="fa-solid fa-passport"></i> UK Graduate Visa (2-Year Unrestricted Right to Work)</span>
             </div>
-            <div class="copyright">© 2026 Devika Yanamala. Designed with premium web technologies.</div>
+
+            <div class="social-links" style="margin-top: 2rem;">
+                <a href="mailto:devikayanamala55@gmail.com" class="magnetic" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/devika-yanamala-325250345/" target="_blank" class="magnetic" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/DevikaYanamala" target="_blank" class="magnetic" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <div class="copyright" style="margin-top: 3rem;">© 2026 Devika Yanamala. Data Analyst Portfolio.</div>
         </div>
     </footer>
 
